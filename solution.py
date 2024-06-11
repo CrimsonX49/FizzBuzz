@@ -1,19 +1,10 @@
-result = []
-
-for i in range(26):
-    result.append(i)
-print(result) 
-
-for i in result.copy():
+for i in range(1, 51):
     if i % 3 == 0 and i % 5 == 0:
-        result.remove(i)
-        result.insert(i, "FizzBuzz")
-    elif i % 5 == 0:
-        result.remove(i)
-        result.insert(i, "Buzz")
+        print("Fizzbuzz!")
     elif i % 3 == 0:
-        result.remove(i)
-        result.insert(i, "Fizz")
-        
-print(result) 
+        print("Fizz!")
+    elif i % 5 == 0:
+        print("Buzz!")
+    else:
+        print(i) 
 
